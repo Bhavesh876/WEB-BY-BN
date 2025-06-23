@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB BY BN</title>
+  <meta name="description" content="Explore DigitalCraft Agency's comprehensive range of digital services including web development, design, digital marketing, and more.">
+  <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+<!-- Favicons -->
+  <link href="images/hero1.jpg" rel="icon">
+  <link href="images/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Preload critical images for better performance -->
+  <link rel="preload" as="image" href="images/service1.jpg">
+  <link rel="preload" as="image" href="images/service2.jpg">
+  <link rel="preload" as="image" href="images/service3.jpg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">WEB BY BN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="fw-bold">Our Services</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Services</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Overview Section -->
+  <section id="services-overview" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>What We Offer</h2>
+        <p>Comprehensive digital solutions tailored to your business needs</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 mb-4" data-aos="fade-up">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Custom websites and web applications that are fast, responsive, and user-friendly.</p>
+            <ul class="service-list">
+              <li>Custom Website Development</li>
+              <li>E-commerce Solutions</li>
+              <li>Content Management Systems</li>
+              <li>Web Application Development</li>
+              <li>Website Maintenance & Support</li>
+            </ul>
+            <a href="#web-development" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Design Services</h3>
+            <p>Visually stunning designs that capture your brand essence and engage your audience.</p>
+            <ul class="service-list">
+              <li>User Interface (UI) Design</li>
+              <li>User Experience (UX) Design</li>
+              <li>Responsive Web Design</li>
+              <li>Graphic Design</li>
+              <li>Logo & Brand Identity Design</li>
+            </ul>
+            <a href="#design-services" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>Strategic marketing solutions to increase visibility and drive quality traffic to your business.</p>
+            <ul class="service-list">
+              <li>Search Engine Optimization (SEO)</li>
+              <li>Social Media Marketing</li>
+              <li>Content Marketing</li>
+              <li>Email Marketing</li>
+              <li>Pay-Per-Click (PPC) Advertising</li>
+            </ul>
+            <a href="#digital-marketing" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Mobile Applications</h3>
+            <p>Native and cross-platform mobile applications that deliver seamless user experiences.</p>
+            <ul class="service-list">
+              <li>iOS App Development</li>
+              <li>Android App Development</li>
+              <li>Cross-Platform Development</li>
+              <li>App UI/UX Design</li>
+              <li>App Maintenance & Updates</li>
+            </ul>
+            <a href="#mobile-apps" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Branding & Identity</h3>
+            <p>Comprehensive branding solutions that help businesses establish a strong market presence.</p>
+            <ul class="service-list">
+              <li>Brand Strategy</li>
+              <li>Logo Design</li>
+              <li>Brand Guidelines</li>
+              <li>Visual Identity Systems</li>
+              <li>Rebranding Services</li>
+            </ul>
+            <a href="#branding" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card h-100">
+            <div class="icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Hosting & Maintenance</h3>
+            <p>Reliable hosting solutions and ongoing maintenance services to keep your digital assets running smoothly.</p>
+            <ul class="service-list">
+              <li>Website Hosting</li>
+              <li>Performance Optimization</li>
+              <li>Security Monitoring</li>
+              <li>Regular Updates & Backups</li>
+              <li>Technical Support</li>
+            </ul>
+            <a href="#hosting-maintenance" class="btn-link">Learn More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Web Development Section -->
+  <section id="web-development" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-right">
+            <div class="section-header">
+              <h2>Web Development</h2>
+            </div>
+            <p>Our web development services focus on creating custom, high-performing websites and web applications that align with your business goals and meet the needs of your users.</p>
+            <p>We work with the latest technologies and frameworks to deliver robust, scalable, and secure web solutions.</p>
+            <h4>Our Development Process:</h4>
+            <ol class="process-list">
+              <li>
+                <span class="process-number">01</span>
+                <div class="process-content">
+                  <h5>Discovery & Planning</h5>
+                  <p>We begin by understanding your business objectives, target audience, and project requirements.</p>
+                </div>
+              </li>
+              <li>
+                <span class="process-number">02</span>
+                <div class="process-content">
+                  <h5>Design & Prototyping</h5>
+                  <p>Creating wireframes and design mockups to visualize the user interface and experience.</p>
+                </div>
+              </li>
+              <li>
+                <span class="process-number">03</span>
+                <div class="process-content">
+                  <h5>Development & Testing</h5>
+                  <p>Building the frontend and backend with rigorous testing throughout the development process.</p>
+                </div>
+              </li>
+              <li>
+                <span class="process-number">04</span>
+                <div class="process-content">
+                  <h5>Deployment & Support</h5>
+                  <p>Launching your website or application and providing ongoing maintenance and support.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-detail-image" data-aos="fade-left">
+            <img src="images/service1.jpg" alt="Web Development Process" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Services Section -->
+  <section id="design-services" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-left">
+            <div class="section-header">
+              <h2>Design Services</h2>
+            </div>
+            <p>Our design team creates visually stunning and user-focused designs that bring your brand to life and create meaningful connections with your audience.</p>
+            <p>We combine creativity with strategic thinking to deliver designs that not only look great but also drive results.</p>
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="design-service-item">
+                  <h5><i class="fas fa-desktop"></i> UI Design</h5>
+                  <p>Intuitive interfaces that enhance user experience and guide them through their journey.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="design-service-item">
+                  <h5><i class="fas fa-user"></i> UX Design</h5>
+                  <p>User-centered design approach that prioritizes ease of use and user satisfaction.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="design-service-item">
+                  <h5><i class="fas fa-object-group"></i> Graphic Design</h5>
+                  <p>Eye-catching visuals that communicate your message effectively.</p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="design-service-item">
+                  <h5><i class="fas fa-pen-nib"></i> Brand Identity</h5>
+                  <p>Comprehensive branding solutions that establish a strong visual presence.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="service-detail-image" data-aos="fade-right">
+            <img src="images/service2.jpg" alt="Design Services" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Marketing Section -->
+  <section id="digital-marketing" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-right">
+            <div class="section-header">
+              <h2>Digital Marketing</h2>
+            </div>
+            <p>Our digital marketing services help businesses increase their online visibility, drive quality traffic, and generate leads that convert into customers.</p>
+            <p>We develop data-driven strategies tailored to your specific goals and target audience, focusing on delivering measurable results.</p>
+            <div class="marketing-services-grid">
+              <div class="marketing-service-item">
+                <div class="icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="content">
+                  <h5>Search Engine Optimization (SEO)</h5>
+                  <p>Improve your organic search rankings to drive more qualified traffic to your website.</p>
+                </div>
+              </div>
+              <div class="marketing-service-item">
+                <div class="icon">
+                  <i class="fas fa-ad"></i>
+                </div>
+                <div class="content">
+                  <h5>Pay-Per-Click (PPC) Advertising</h5>
+                  <p>Strategic ad campaigns that target potential customers when they're searching for your products or services.</p>
+                </div>
+              </div>
+              <div class="marketing-service-item">
+                <div class="icon">
+                  <i class="fas fa-share-alt"></i>
+                </div>
+                <div class="content">
+                  <h5>Social Media Marketing</h5>
+                  <p>Engage with your audience and build brand awareness through effective social media strategies.</p>
+                </div>
+              </div>
+              <div class="marketing-service-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="content">
+                  <h5>Email Marketing</h5>
+                  <p>Build relationships with prospects and customers through targeted email campaigns.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-detail-image" data-aos="fade-left">
+            <img src="images/service3.jpg" alt="Digital Marketing" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Apps Section -->
+  <section id="mobile-apps" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-left">
+            <div class="section-header">
+              <h2>Mobile Applications</h2>
+            </div>
+            <p>We develop native and cross-platform mobile applications that provide seamless user experiences across different devices and operating systems.</p>
+            <p>Our mobile development team focuses on creating intuitive, feature-rich apps that help businesses connect with their users on the go.</p>
+            <div class="features-list">
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Native iOS & Android Development</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Cross-Platform Solutions (React Native, Flutter)</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Progressive Web Apps (PWAs)</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>App Store Optimization</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Ongoing Support & Maintenance</span>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Integration with Backend Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="service-detail-image" data-aos="fade-right">
+            <img src="images/service4.jpg" alt="Mobile App Development" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Branding Section -->
+  <section id="branding" class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-right">
+            <div class="section-header">
+              <h2>Branding & Identity</h2>
+            </div>
+            <p>Your brand is more than just a logo—it's the complete experience you provide to your customers. Our branding services help you create a strong, cohesive brand identity that resonates with your target audience.</p>
+            <p>We work closely with you to understand your business values and objectives, then develop branding elements that communicate your unique story and position you effectively in the market.</p>
+            <div class="accordion" id="brandingAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Brand Strategy
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#brandingAccordion">
+                  <div class="accordion-body">
+                    Developing a clear brand strategy that defines your position in the market, target audience, value proposition, and key messaging.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Visual Identity
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#brandingAccordion">
+                  <div class="accordion-body">
+                    Creating distinctive visual elements including logo design, color schemes, typography, and graphic styles that represent your brand consistently.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Brand Guidelines
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#brandingAccordion">
+                  <div class="accordion-body">
+                    Developing comprehensive guidelines for consistent application of your brand across all touchpoints and marketing materials.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="service-detail-image" data-aos="fade-left">
+            <img src="images/service5.jpg" alt="Branding Services" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hosting & Maintenance Section -->
+  <section id="hosting-maintenance" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <div class="service-detail-content" data-aos="fade-left">
+            <div class="section-header">
+              <h2>Hosting & Maintenance</h2>
+            </div>
+            <p>We provide reliable hosting solutions and ongoing maintenance services to ensure your website or application runs smoothly and securely.</p>
+            <p>Our team monitors your digital assets, performs regular updates, and provides technical support to prevent issues and quickly resolve any that arise.</p>
+            <div class="two-column-list">
+              <ul>
+                <li><i class="fas fa-server"></i> Cloud Hosting Solutions</li>
+                <li><i class="fas fa-shield-alt"></i> Security Monitoring & Updates</li>
+                <li><i class="fas fa-tachometer-alt"></i> Performance Optimization</li>
+              </ul>
+              <ul>
+                <li><i class="fas fa-sync"></i> Regular Backups</li>
+                <li><i class="fas fa-wrench"></i> Technical Support</li>
+                <li><i class="fas fa-chart-line"></i> Uptime Monitoring</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="service-detail-image" data-aos="fade-right">
+            <img src="images/service6.jpg" alt="Hosting & Maintenance" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="our-process" class="py-5 bg-light">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Our Process</h2>
+        <p>How we work on your projects from start to finish</p>
+      </div>
+      <div class="process-timeline">
+        <div class="timeline-item" data-aos="fade-up">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h4>Discovery</h4>
+            <p>We start by understanding your business, goals, target audience, and project requirements through in-depth consultations.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h4>Strategy</h4>
+            <p>Based on our findings, we develop a comprehensive strategy tailored to your specific needs and objectives.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h4>Design</h4>
+            <p>Our creative team designs the visual elements, focusing on user experience and brand consistency.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="timeline-number">4</div>
+          <div class="timeline-content">
+            <h4>Development</h4>
+            <p>We bring the designs to life through expert development, ensuring functionality and performance.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="timeline-number">5</div>
+          <div class="timeline-content">
+            <h4>Testing</h4>
+            <p>Rigorous testing across devices and platforms to ensure everything works flawlessly.</p>
+          </div>
+        </div>
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+          <div class="timeline-number">6</div>
+          <div class="timeline-content">
+            <h4>Launch & Support</h4>
+            <p>We help you launch your project and provide ongoing support and maintenance to ensure continued success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <h2>Frequently Asked Questions</h2>
+        <p>Answers to common questions about our services</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item" data-aos="fade-up">
+              <h2 class="accordion-header" id="faqOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                  How long does it take to complete a website?
+                </button>
+              </h2>
+              <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  The timeline for completing a website depends on its complexity, features, and scope. A simple informational website might take 4-6 weeks, while more complex projects with custom functionality can take 8-12 weeks or more. During our initial consultation, we'll provide a more accurate timeline based on your specific requirements.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+              <h2 class="accordion-header" id="faqTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                  What is your pricing structure?
+                </button>
+              </h2>
+              <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Our pricing is project-based and depends on the scope, complexity, and specific requirements of your project. We provide detailed proposals that outline all costs upfront, so you know exactly what to expect. We're committed to delivering value and ensuring our services align with your budget constraints while meeting your objectives.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+              <h2 class="accordion-header" id="faqThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                  Do you provide ongoing support after project completion?
+                </button>
+              </h2>
+              <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we offer various maintenance and support packages to ensure your digital assets continue to perform optimally after launch. These can include regular updates, security monitoring, content updates, performance optimization, and technical support. We can tailor a support package based on your specific needs and budget.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="300">
+              <h2 class="accordion-header" id="faqFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                  How do you measure the success of digital marketing campaigns?
+                </button>
+              </h2>
+              <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We track and analyze various key performance indicators (KPIs) that align with your business goals, such as website traffic, conversion rates, engagement metrics, lead generation, and return on investment (ROI). We provide regular reports that offer transparent insights into campaign performance and make data-driven adjustments to optimize results continually.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" data-aos="fade-up" data-aos-delay="400">
+              <h2 class="accordion-header" id="faqFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                  Can you work with clients remotely?
+                </button>
+              </h2>
+              <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely! We work with clients worldwide and have established effective remote collaboration processes. We use various tools for communication, project management, and file sharing to ensure smooth collaboration regardless of geographic location. Regular video calls, detailed documentation, and transparent reporting keep you informed throughout the project.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2>Ready to get started?</h2>
+          <p class="mb-4">Contact us today to discuss your project and discover how we can help you achieve your digital goals.</p>
+          <a href="contact.html" class="btn btn-light btn-lg">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4>WEB BY BN</h4>
+          <p>Creating exceptional digital experiences that drive business growth and user engagement.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#web-development">Web Development</a></li>
+            <li><a href="services.html#design-services">Design Services</a></li>
+            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+            <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+            <li><a href="services.html#branding">Branding & Identity</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> </li>
+            <li><i class="fas fa-phone"></i> 8852049603</li>
+            <li><i class="fas fa-envelope"></i> support@webbybn.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2023 WEB BY BN. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB BY BN</title>
+  <meta name="description" content="Browse DigitalCraft Agency's portfolio of recent work showcasing our expertise in web development, design, and digital marketing projects.">
+  <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicons -->
+  <link href="images/hero1.jpg" rel="icon">
+  <link href="images/logo.jpg" rel="apple-touch-icon">
+
+
+  <!-- Preload critical images for better performance -->
+  <link rel="preload" as="image" href="images/portfolio1.png">
+  <link rel="preload" as="image" href="images/portfolio2.jpg">
+  <link rel="preload" as="image" href="images/portfolio3.jpg">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">DigitalCraft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="fw-bold">Our Portfolio</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Portfolio Filter Section -->
+  <section id="portfolio-filter" class="py-5">
+    <div class="container">
+      <div class="filter-buttons text-center mb-5">
+        <button class="btn btn-outline-primary active" data-filter="all">All Projects</button>
+        <button class="btn btn-outline-primary" data-filter="web">Web Development</button>
+        <button class="btn btn-outline-primary" data-filter="design">Design</button>
+        <button class="btn btn-outline-primary" data-filter="marketing">Digital Marketing</button>
+        <button class="btn btn-outline-primary" data-filter="branding">Branding</button>
+      </div>
+      <div class="row portfolio-items">
+        <!-- Portfolio Item 1 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+          <div class="portfolio-card" data-aos="zoom-in">
+            <div class="portfolio-image">
+              <img src="images/portfolio1.png" alt="E-commerce Website Redesign" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-1" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>E-commerce Website Redesign</h4>
+              <p>Web Development, UX Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 2 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="design branding">
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="100">
+            <div class="portfolio-image">
+              <img src="images/portfolio2.jpg" alt="Brand Identity Design" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-2" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Brand Identity Design</h4>
+              <p>Branding, Graphic Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 3 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="marketing">
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="portfolio-image">
+              <img src="images/portfolio3.jpg" alt="Digital Marketing Campaign" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-3" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Digital Marketing Campaign</h4>
+              <p>SEO, Social Media, Content Marketing</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 4 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="web">
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="300">
+            <div class="portfolio-image">
+              <img src="images/Mobile Banking App.png" alt="Mobile Banking App" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-4" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal4">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Mobile Banking App</h4>
+              <p>UX/UI Design, Mobile Development</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 5 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="branding design">
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="portfolio-image">
+              <img src="images/Restaurant Rebranding.png" alt="Restaurant Rebranding" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-5" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal5">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Restaurant Rebranding</h4>
+              <p>Branding, Print Design</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 6 -->
+        <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="marketing web">
+          <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="500">
+            <div class="portfolio-image">
+              <img src="images/Lead Generation Website.webp" alt="Lead Generation Website" class="img-fluid">
+              <div class="portfolio-overlay">
+                <div class="portfolio-buttons">
+                  <a href="#case-6" class="btn btn-sm btn-light" data-bs-toggle="modal" data-bs-target="#portfolioModal6">View Details</a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h4>Lead Generation Website</h4>
+              <p>Web Development, Digital Marketing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel1">E-commerce Website Redesign</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-1">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="images/portfolio1.jpg" alt="E-commerce Website Redesign" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>LuxeShop, a high-end fashion retailer, approached us to redesign their e-commerce website to improve user experience, increase conversion rates, and better showcase their premium products. The existing site had outdated design, slow load times, and a complicated checkout process that led to high cart abandonment rates.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Modernizing the design while maintaining brand identity</li>
+                <li>Optimizing site performance for faster load times</li>
+                <li>Simplifying the navigation and checkout process</li>
+                <li>Creating a mobile-responsive experience</li>
+                <li>Integrating with their existing inventory management system</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We started with a comprehensive analysis of the existing website, including user journey mapping and heatmap analysis to identify pain points. We then developed a new design concept focused on clean aesthetics, intuitive navigation, and highlighting product imagery.</p>
+              
+              <p>Our development team built a custom e-commerce solution with optimized code for speed and performance. We implemented a streamlined checkout process, improved product filtering and search functionality, and created an intuitive mobile experience.</p>
+              
+              <h3>Results</h3>
+              <div class="row results-metrics">
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>48%</h4>
+                    <p>Increase in conversion rate</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>65%</h4>
+                    <p>Decrease in cart abandonment</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>32%</h4>
+                    <p>Increase in average order value</p>
+                  </div>
+                </div>
+              </div>
+              
+              <p>The redesigned website significantly improved user engagement metrics, with visitors spending 27% more time browsing products and viewing 40% more pages per session. Mobile sales increased by 85% in the first three months after launch.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> LuxeShop</li>
+                  <li><strong>Category:</strong> E-commerce, Web Development</li>
+                  <li><strong>Duration:</strong> 12 Weeks</li>
+                  <li><strong>Completed:</strong> March 2023</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>UX Research & Strategy</li>
+                  <li>UI Design</li>
+                  <li>Responsive Web Development</li>
+                  <li>E-commerce Implementation</li>
+                  <li>Performance Optimization</li>
+                  <li>SEO Setup</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"The team at DigitalCraft completely transformed our online presence. Our new e-commerce site not only looks stunning but has dramatically improved our sales and customer satisfaction. Their attention to detail and strategic approach to the redesign has paid dividends beyond our expectations."</p>
+                  <footer>— Sarah Johnson, Marketing Director at LuxeShop</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel2">Brand Identity Design</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-2">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="images/portfolio2.jpg" alt="Brand Identity Design" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>Evergreen, a sustainable home goods startup, needed a complete brand identity that would reflect their eco-friendly mission and appeal to environmentally conscious consumers. As a new company, they required a cohesive visual identity that would help them stand out in a competitive market.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Creating a distinctive brand identity in a crowded market</li>
+                <li>Developing a visual language that communicated sustainability without using clichés</li>
+                <li>Designing a flexible identity system that would work across various touchpoints</li>
+                <li>Establishing brand guidelines that could grow with the company</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We began with an extensive research phase, analyzing market trends, competitor branding, and target audience preferences. We conducted workshops with the client to understand their core values, mission, and vision for the brand.</p>
+              
+              <p>Based on our findings, we developed a brand concept centered around the idea of "mindful living." We created a modern, organic logo using a custom typeface, complemented by a sophisticated color palette of earthy tones with vibrant accents. The visual identity included custom illustrations, photography guidelines, packaging designs, and a comprehensive digital presence.</p>
+              
+              <h3>Results</h3>
+              <p>The new brand identity received overwhelmingly positive feedback from both the client and target consumers. Evergreen successfully launched their product line with a cohesive brand experience across all touchpoints. The distinctive identity helped them secure partnerships with several premium retailers, and they reported 30% higher engagement on social media channels compared to industry benchmarks.</p>
+              
+              <p>The brand guidelines we developed have provided a strong foundation for their marketing efforts, ensuring consistency as they continue to grow and expand their product line.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> Evergreen Home Goods</li>
+                  <li><strong>Category:</strong> Branding, Graphic Design</li>
+                  <li><strong>Duration:</strong> 8 Weeks</li>
+                  <li><strong>Completed:</strong> November 2022</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>Brand Strategy</li>
+                  <li>Logo Design</li>
+                  <li>Visual Identity System</li>
+                  <li>Packaging Design</li>
+                  <li>Brand Guidelines</li>
+                  <li>Marketing Collateral</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"DigitalCraft truly understood our vision and translated it into a beautiful brand identity that perfectly represents who we are. Their strategic approach to branding and attention to detail has given us a solid foundation for our business. We couldn't be happier with the results."</p>
+                  <footer>— Michael Chen, Founder of Evergreen</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel3">Digital Marketing Campaign</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-3">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="https://pixabay.com/get/gd5cc636dda456f8085e28433bcabcb924699286081cf4e8a7b2c82780e89758f54efc4ad2e349207f1b46dc92b5575381b3f7c3e209c2a9b80267773ca9e54d5_1280.jpg" alt="Digital Marketing Campaign" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>TechNova, a B2B SaaS company offering project management solutions, approached us to develop a comprehensive digital marketing campaign to increase brand awareness, generate qualified leads, and improve their conversion rates. Despite having a quality product, they struggled with market visibility and lead generation.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Low brand awareness in a competitive market</li>
+                <li>High cost-per-acquisition through existing channels</li>
+                <li>Inconsistent messaging across marketing platforms</li>
+                <li>Limited engagement with content marketing efforts</li>
+                <li>Difficulty in reaching decision-makers at target companies</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We developed a multi-channel digital marketing strategy focusing on building TechNova's authority in the project management space. Our approach included:</p>
+              
+              <ul>
+                <li><strong>Content Strategy:</strong> Developing high-value, educational content specifically addressing pain points of their target audience</li>
+                <li><strong>SEO Optimization:</strong> Implementing a comprehensive SEO strategy targeting high-intent keywords</li>
+                <li><strong>Paid Media:</strong> Creating targeted LinkedIn and Google Ads campaigns focusing on decision-makers</li>
+                <li><strong>Email Marketing:</strong> Developing nurture sequences for leads at different stages of the sales funnel</li>
+                <li><strong>Marketing Automation:</strong> Setting up automation workflows to personalize the customer journey</li>
+              </ul>
+              
+              <h3>Results</h3>
+              <div class="row results-metrics">
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>185%</h4>
+                    <p>Increase in quality leads</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>42%</h4>
+                    <p>Reduction in cost per acquisition</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>78%</h4>
+                    <p>Increase in organic traffic</p>
+                  </div>
+                </div>
+              </div>
+              
+              <p>The campaign dramatically improved TechNova's market position, establishing them as a thought leader in the project management space. Within six months, their content was regularly featured in industry publications, website engagement metrics improved significantly, and their sales team reported an increase in the quality of inbound leads.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> TechNova</li>
+                  <li><strong>Category:</strong> Digital Marketing, SEO, Content Marketing</li>
+                  <li><strong>Duration:</strong> 6 Months (Ongoing)</li>
+                  <li><strong>Launched:</strong> January 2023</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>Marketing Strategy</li>
+                  <li>Content Marketing</li>
+                  <li>SEO Optimization</li>
+                  <li>PPC Advertising</li>
+                  <li>Email Marketing</li>
+                  <li>Analytics & Reporting</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"The results from our digital marketing campaign with DigitalCraft have been exceptional. They took the time to understand our business goals and target audience, creating a strategy that has delivered measurable ROI. Their data-driven approach has transformed how we think about marketing."</p>
+                  <footer>— Rachel Lewis, Marketing Director at TechNova</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel4">Mobile Banking App</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-4">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="https://pixabay.com/get/g9b1009e29208020797ec200aec51d0f16cff67aa780a4f6ab053aa5f358a824a17aea0ece9a39bb7da277c28b33edddeee1ce11f79569183837b54eff2f9f6c4_1280.jpg" alt="Mobile Banking App" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>First City Bank, a regional financial institution, needed to modernize their digital banking experience with a new mobile app that would meet the evolving needs of their customers. They wanted to compete with larger banks by offering an intuitive, feature-rich mobile experience.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Creating an intuitive interface for users of all ages and technical abilities</li>
+                <li>Implementing robust security features without compromising usability</li>
+                <li>Integrating with multiple backend systems and APIs</li>
+                <li>Ensuring compliance with financial regulations and accessibility standards</li>
+                <li>Developing for both iOS and Android platforms with consistent experiences</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We began with an extensive discovery phase, conducting user research with existing customers to understand their needs, pain points, and expectations. We created detailed user personas and journey maps to guide our design decisions.</p>
+              
+              <p>Our UX team developed wireframes and interactive prototypes that were tested with real users. Based on feedback, we refined the design to create an intuitive interface that prioritized the most common banking tasks while making advanced features easily accessible.</p>
+              
+              <p>For development, we used a cross-platform framework to ensure consistency across iOS and Android while still adhering to platform-specific design guidelines. We implemented robust security features including biometric authentication, encryption, and secure session management.</p>
+              
+              <h3>Results</h3>
+              <div class="row results-metrics">
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>87%</h4>
+                    <p>User satisfaction rate</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>62%</h4>
+                    <p>Increase in mobile banking users</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>41%</h4>
+                    <p>Reduction in branch transactions</p>
+                  </div>
+                </div>
+              </div>
+              
+              <p>The app received excellent ratings on both the App Store and Google Play. Customer feedback highlighted the app's ease of use, speed, and comprehensive feature set. Within three months of launch, mobile banking engagement increased by 62%, with a 30% increase in customer retention among digital users.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> First City Bank</li>
+                  <li><strong>Category:</strong> Mobile App Development, UX/UI Design</li>
+                  <li><strong>Duration:</strong> 6 Months</li>
+                  <li><strong>Completed:</strong> August 2022</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>User Research</li>
+                  <li>UX/UI Design</li>
+                  <li>Mobile App Development</li>
+                  <li>API Integration</li>
+                  <li>Quality Assurance</li>
+                  <li>Deployment & Support</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"Working with DigitalCraft on our mobile banking app was a game-changer for our institution. They truly understood the unique challenges of creating a banking app that's both secure and user-friendly. The results have exceeded our expectations, helping us attract younger customers while better serving our existing client base."</p>
+                  <footer>— James Anderson, Digital Banking Director at First City Bank</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel5">Restaurant Rebranding</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-5">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="https://pixabay.com/get/g0ee3ca0990b10d8bfc678e9b580457eaaec7484a5820cfa9956ac9f9d3df089ab92cf7affdc7616b3ac41b2b38b24133bc00ca66cee5982537f6eb30bb96b5ee_1280.jpg" alt="Restaurant Rebranding" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>Sapore, a family-owned Italian restaurant with 15 years of history, needed a complete rebrand to attract a younger demographic while retaining their loyal customer base. Despite their excellent food and service, their dated visual identity and marketing materials were holding them back in an increasingly competitive market.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Modernizing the brand while honoring its heritage and existing customer base</li>
+                <li>Creating a cohesive identity system that works across physical and digital touchpoints</li>
+                <li>Developing a distinctive visual language in a crowded restaurant market</li>
+                <li>Designing for multiple applications including signage, menus, packaging, and digital presence</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We started with a deep dive into the restaurant's history, values, and unique selling propositions. We conducted interviews with the owners, staff, and long-time customers to understand what made Sapore special.</p>
+              
+              <p>Our design team developed a brand concept that balanced tradition and modernity, with a refined logo that maintained elements of their original mark while introducing a more contemporary aesthetic. We created a warm, inviting color palette inspired by the Italian countryside, paired with elegant typography and custom illustrations of ingredients and Italian motifs.</p>
+              
+              <p>The rebrand extended to all customer touchpoints including exterior signage, interior decor elements, menu design, staff uniforms, takeout packaging, website, and social media presence.</p>
+              
+              <h3>Results</h3>
+              <p>The rebranding was launched with a special event that garnered local press coverage. Regular customers embraced the new look, while the restaurant saw a 35% increase in new customers in the first quarter after the rebrand. Social media engagement increased by 180%, with significantly more user-generated content as customers shared photos of their dining experience.</p>
+              
+              <p>The cohesive brand identity has given Sapore a stronger market position and laid the foundation for potential expansion to new locations in the future.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> Sapore Italian Restaurant</li>
+                  <li><strong>Category:</strong> Branding, Print Design</li>
+                  <li><strong>Duration:</strong> 10 Weeks</li>
+                  <li><strong>Completed:</strong> February 2023</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>Brand Strategy</li>
+                  <li>Logo Design</li>
+                  <li>Visual Identity System</li>
+                  <li>Menu Design</li>
+                  <li>Environmental Graphics</li>
+                  <li>Website Redesign</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"DigitalCraft truly captured the essence of our restaurant—our family history, our passion for authentic Italian cuisine, and our commitment to hospitality. The rebrand has breathed new life into our business while respecting our roots. Our regular customers love it, and we're seeing so many new faces. It's been transformative."</p>
+                  <footer>— Marco Rossi, Owner of Sapore</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="portfolioModalLabel6">Lead Generation Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="case-6">
+          <div class="row">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+              <img src="https://pixabay.com/get/g43e818fb0bca106f493c5c824bde65d395dd849494ae3469c59c5eef1763709ee46c9ded2f840a3c191a11ff81cb754109d95969c219229956b80575f6016c49_1280.jpg" alt="Lead Generation Website" class="img-fluid rounded mb-4">
+              <h3>Project Overview</h3>
+              <p>PropertySolutions, a commercial real estate firm specializing in office space leasing, needed a website focused on lead generation. Their existing site was primarily informational and failed to convert visitors into qualified leads for their sales team.</p>
+              
+              <h3>The Challenge</h3>
+              <p>The main challenges included:</p>
+              <ul>
+                <li>Creating a conversion-focused website architecture</li>
+                <li>Developing compelling content that addresses client pain points</li>
+                <li>Implementing effective lead capture mechanisms without being intrusive</li>
+                <li>Integrating with their CRM system for seamless lead management</li>
+                <li>Optimizing for search engines to attract qualified traffic</li>
+              </ul>
+              
+              <h3>Our Approach</h3>
+              <p>We developed a comprehensive strategy centered around the customer journey, mapping content and conversion points to different stages of the decision-making process. Our approach included:</p>
+              
+              <ul>
+                <li><strong>Conversion-Centered Design:</strong> Creating layouts that guide visitors toward conversion actions</li>
+                <li><strong>Content Strategy:</strong> Developing valuable resources such as market reports, guides, and calculators to capture leads</li>
+                <li><strong>SEO Strategy:</strong> Implementing technical SEO best practices and content optimization for relevant keywords</li>
+                <li><strong>CRM Integration:</strong> Setting up seamless integration with their Salesforce CRM</li>
+                <li><strong>Analytics Setup:</strong> Implementing comprehensive tracking to measure performance and optimize over time</li>
+              </ul>
+              
+              <h3>Results</h3>
+              <div class="row results-metrics">
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>215%</h4>
+                    <p>Increase in lead generation</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>56%</h4>
+                    <p>Improvement in lead quality</p>
+                  </div>
+                </div>
+                <div class="col-md-4 text-center">
+                  <div class="result-item">
+                    <h4>68%</h4>
+                    <p>Increase in organic traffic</p>
+                  </div>
+                </div>
+              </div>
+              
+              <p>The new website significantly outperformed the previous version, providing a consistent stream of qualified leads to the sales team. The content resources established PropertySolutions as a thought leader in their market, with their guides and market reports being widely shared within the industry.</p>
+              
+              <p>The improved lead capture and CRM integration streamlined their sales process, reducing the time from initial contact to proposal by 40%.</p>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-details mb-4">
+                <h4>Project Details</h4>
+                <ul class="project-info-list">
+                  <li><strong>Client:</strong> PropertySolutions</li>
+                  <li><strong>Category:</strong> Web Development, Digital Marketing</li>
+                  <li><strong>Duration:</strong> 14 Weeks</li>
+                  <li><strong>Completed:</strong> April 2023</li>
+                </ul>
+              </div>
+              <div class="project-services mb-4">
+                <h4>Services Provided</h4>
+                <ul class="project-services-list">
+                  <li>Web Design & Development</li>
+                  <li>Content Strategy</li>
+                  <li>SEO Optimization</li>
+                  <li>CRM Integration</li>
+                  <li>Conversion Rate Optimization</li>
+                  <li>Analytics Implementation</li>
+                </ul>
+              </div>
+              <div class="client-testimonial">
+                <h4>Client Testimonial</h4>
+                <blockquote>
+                  <p>"Our website has been transformed from a digital brochure into a powerful lead generation tool. DigitalCraft understood exactly what we needed and delivered a solution that has had a direct impact on our bottom line. The integration with our CRM has streamlined our entire sales process."</p>
+                  <footer>— Robert Thompson, Sales Director at PropertySolutions</footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2>Ready to start your next project?</h2>
+          <p class="mb-4">Contact us today to discuss how we can help bring your ideas to life.</p>
+          <a href="contact.html" class="btn btn-light btn-lg">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4>DigitalCraft</h4>
+          <p>Creating exceptional digital experiences that drive business growth and user engagement.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#web-development">Web Development</a></li>
+            <li><a href="services.html#design-services">Design Services</a></li>
+            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+            <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+            <li><a href="services.html#branding">Branding & Identity</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Digital Lane, Tech City</li>
+            <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+            <li><i class="fas fa-envelope"></i> info@digitalcraft.agency</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2023 DigitalCraft Agency. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB BY BN</title>
+  <meta name="description" content="Get in touch with DigitalCraft Agency to discuss your digital project needs. Our team is ready to help bring your vision to life.">
+  <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicons -->
+  <link href="images/hero1.jpg" rel="icon">
+  <link href="images/logo.jpg" rel="apple-touch-icon">
+
+
+  <!-- Add any critical styles or scripts for contact page -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous" defer></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">WEB BY BN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h1 class="fw-bold">Contact Us</h1>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Info Section -->
+  <section id="contact-info" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="contact-info-card" data-aos="fade-up">
+            <div class="icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Visit Us</h3>
+            <p>sumerpur<br>Pali<br>Rajasthan</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <h3>Call Us</h3>
+            <p>Phone: 8852049603<br>Phone: 8769418845</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email Us</h3>
+            <p>info@webbybn.com<br>support@webbybn.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <h2>Let's Start a Conversation</h2>
+          <p>Fill out the form below to get in touch with our team. Whether you have a question about our services, pricing, or just want to say hello, we're here to help.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-form-wrapper" data-aos="fade-up">
+            <form id="contactForm" class="contact-form">
+              <div class="alert alert-success d-none" id="contactSuccess">
+                Your message has been sent successfully. We'll get back to you shortly!
+              </div>
+              <div class="alert alert-danger d-none" id="contactError">
+                There was an error sending your message. Please try again later.
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="name">Your Name <span class="text-danger">*</span></label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                    <div class="invalid-feedback">Please enter your name.</div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="email">Your Email <span class="text-danger">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-group">
+                    <label for="subject">Subject <span class="text-danger">*</span></label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a subject.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group mb-4">
+                <label for="service">Service You're Interested In</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Design Services">Design Services</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Mobile Applications">Mobile Applications</option>
+                  <option value="Branding">Branding & Identity</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group mb-4">
+                <label for="message">Your Message <span class="text-danger">*</span></label>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+                <div class="invalid-feedback">Please enter your message.</div>
+              </div>
+              <div class="form-group mb-4">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacy" required>
+                  <label class="form-check-label" for="privacy">
+                    I agree to the <a href="#">privacy policy</a> and consent to having this website store my information for future correspondence.
+                  </label>
+                  <div class="invalid-feedback">You must agree to our privacy policy.</div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+
+  <!-- <section id="map-section" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="map-wrapper" data-aos="fade-up"> -->
+            <!-- Embedding an SVG map illustration instead of an actual Google Map -->
+
+            <!-- <div class="map-placeholder">
+              <svg width="100%" height="400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" preserveAspectRatio="xMidYMid meet"> -->
+                
+                <!-- Background -->
+
+                <!-- <rect x="0" y="0" width="800" height="400" fill="#e9ecef" /> -->
+                
+                <!-- Map Grid Lines -->
+
+                <!-- <g stroke="#d1d1d1" stroke-width="1">
+                  <line x1="0" y1="50" x2="800" y2="50" />
+                  <line x1="0" y1="100" x2="800" y2="100" />
+                  <line x1="0" y1="150" x2="800" y2="150" />
+                  <line x1="0" y1="200" x2="800" y2="200" />
+                  <line x1="0" y1="250" x2="800" y2="250" />
+                  <line x1="0" y1="300" x2="800" y2="300" />
+                  <line x1="0" y1="350" x2="800" y2="350" />
+                  
+                  <line x1="100" y1="0" x2="100" y2="400" />
+                  <line x1="200" y1="0" x2="200" y2="400" />
+                  <line x1="300" y1="0" x2="300" y2="400" />
+                  <line x1="400" y1="0" x2="400" y2="400" />
+                  <line x1="500" y1="0" x2="500" y2="400" />
+                  <line x1="600" y1="0" x2="600" y2="400" />
+                  <line x1="700" y1="0" x2="700" y2="400" />
+                </g> -->
+                
+                <!-- Roads -->
+                <!-- <g>
+                  <rect x="150" y="180" width="500" height="20" fill="#ffffff" />
+                  <rect x="390" y="50" width="20" height="300" fill="#ffffff" />
+                  <rect x="250" y="120" width="300" height="15" fill="#ffffff" />
+                  <rect x="600" y="120" width="15" height="160" fill="#ffffff" />
+                </g> -->
+                
+                <!-- Buildings -->
+                <!-- <g>
+                  <rect x="200" y="220" width="40" height="30" fill="#6c757d" />
+                  <rect x="260" y="220" width="30" height="50" fill="#495057" />
+                  <rect x="320" y="240" width="50" height="40" fill="#6c757d" />
+                  <rect x="420" y="220" width="60" height="60" fill="#343a40" />
+                  <rect x="500" y="250" width="40" height="30" fill="#495057" />
+                  <rect x="200" y="300" width="100" height="40" fill="#6c757d" />
+                  <rect x="500" y="150" width="70" height="50" fill="#495057" />
+                  <rect x="450" y="70" width="40" height="30" fill="#6c757d" />
+                  <rect x="320" y="80" width="50" height="20" fill="#343a40" />
+                </g> -->
+                
+                <!-- Office Location Marker -->
+                <!-- <g transform="translate(425,220)">
+                  <circle cx="0" cy="0" r="15" fill="#dc3545" />
+                  <circle cx="0" cy="0" r="7" fill="#ffffff" />
+                  <text x="25" y="5" font-family="Arial" font-size="14" fill="#000000">Our Office</text>
+                </g>
+                 -->
+                <!-- Parks -->
+                <!-- <rect x="200" y="80" width="80" height="60" fill="#28a745" opacity="0.7" rx="10" ry="10" />
+                <rect x="550" y="300" width="100" height="60" fill="#28a745" opacity="0.7" rx="10" ry="10" /> -->
+                
+                <!-- Water -->
+                <!-- <rect x="650" y="50" width="100" height="100" fill="#007bff" opacity="0.5" rx="10" ry="10" /> -->
+                
+                <!-- Compass -->
+                <!-- <g transform="translate(720,80)">
+                  <circle cx="0" cy="0" r="20" fill="#ffffff" stroke="#000000" stroke-width="1" />
+                  <line x1="0" y1="-15" x2="0" y2="15" stroke="#000000" stroke-width="1" />
+                  <line x1="-15" y1="0" x2="15" y2="0" stroke="#000000" stroke-width="1" />
+                  <text x="0" y="-5" font-family="Arial" font-size="8" text-anchor="middle" fill="#000000">N</text>
+                  <text x="0" y="12" font-family="Arial" font-size="8" text-anchor="middle" fill="#000000">S</text>
+                  <text x="6" y="4" font-family="Arial" font-size="8" fill="#000000">E</text>
+                  <text x="-10" y="4" font-family="Arial" font-size="8" fill="#000000">W</text>
+                </g> -->
+                
+                <!-- Map Title -->
+                <!-- <text x="400" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">DigitalCraft Agency Location</text>
+              </svg>
+            </div>
+            <div class="map-overlay">
+              <div class="map-info">
+                <h4>DigitalCraft Agency</h4>
+                <p>123 Digital Lane, Tech City, TC 12345</p>
+                <p><strong>Hours:</strong> Monday-Friday: 9am-6pm</p>
+                <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-primary">Get Directions</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- FAQ Section -->
+  <section id="contact-faq" class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <h2>Frequently Asked Questions</h2>
+          <p>Find quick answers to common questions about working with us.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="contactFaq" data-aos="fade-up">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is your typical response time?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  We typically respond to all inquiries within 24 business hours. For urgent matters, please indicate this in the subject line of your message or call our office directly.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How do you handle project estimates?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  After our initial consultation, we'll provide a detailed proposal including project scope, timeline, and cost estimate. We believe in transparent pricing and will clearly outline what's included in our services. For complex projects, we may schedule a discovery phase to better understand your requirements before providing a final estimate.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Do you work with clients remotely?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Yes, we work with clients worldwide. We have established effective processes for remote collaboration using various communication tools and project management software. We schedule regular video calls and provide detailed documentation to ensure clear communication throughout the project lifecycle.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What information should I prepare for our initial consultation?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  To make our initial consultation as productive as possible, it helps to have information about your business goals, target audience, project timeline, budget range, and any existing brand materials or website. If you have examples of websites or designs you like, those are helpful too. Don't worry if you don't have everything prepared – we're here to guide you through the process.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Do you offer maintenance services after project completion?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#contactFaq">
+                <div class="accordion-body">
+                  Yes, we offer various maintenance packages to keep your digital assets running smoothly after launch. These can include regular updates, security monitoring, content updates, performance optimization, and technical support. We can customize a maintenance plan based on your specific needs and budget.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Office Images Section -->
+  <section id="office-images" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2>Our Work Environment</h2>
+          <p>Take a peek inside our creative office space where innovation happens</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="office-image" data-aos="fade-up">
+            <img src="images/python.jpg" alt="Python" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="office-image" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/html.jpg" alt="HTML" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="office-image" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/java.jpg" alt="java" class="img-fluid rounded">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="office-image" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/c-programming.png" alt="c" class="img-fluid rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row align-items-center justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2>Ready to start your project?</h2>
+          <p class="mb-4">We're excited to hear about your ideas and help bring them to life.</p>
+          <a href="#contact-form" class="btn btn-light btn-lg smooth-scroll">Get Started Today</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h4>WEB BY BN</h4>
+          <p>Creating exceptional digital experiences that drive business growth and user engagement.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+          <h5>Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+          <h5>Services</h5>
+          <ul class="footer-links">
+            <li><a href="services.html#web-development">Web Development</a></li>
+            <li><a href="services.html#design-services">Design Services</a></li>
+            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+            <li><a href="services.html#mobile-apps">Mobile Applications</a></li>
+            <li><a href="services.html#branding">Branding & Identity</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i></li>
+            <li><i class="fas fa-phone"></i> 8852049603</li>
+            <li><i class="fas fa-envelope"></i> support@webbybn.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4">
+      <div class="row">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2023 WEB BY BN. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="footer-bottom-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
